@@ -1,6 +1,6 @@
 root = [5,4,2,3,3,7]
 
-class node:
+class Node:
     def __init__(self, value):
         self.value = value
         self.left = None
@@ -15,6 +15,7 @@ while queue:
     prev = float('-inf') if level % 2 == 0 else float('inf')
     for _ in range(len(queue)):
         node = queue.pop(0)
+        print(node)
         if (level % 2 ==0 and (node.val % 2 == 0 or node.val <= prev)) or (level % 2 != 0 and (node.val % 2 != 0 or node.val >= prev)):
             print(False)
 
