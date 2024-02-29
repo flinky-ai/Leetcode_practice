@@ -36,6 +36,7 @@ Constraints:
 """
 
 class Solution:
+    target = 2
     def numberOfEmployeesWhoMetTarget(self, hours: List[int], target: int) -> int:
         count = 0
         l = len(hours)
